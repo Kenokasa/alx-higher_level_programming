@@ -1,0 +1,29 @@
+import unittest
+from my_list import MyList
+
+class TestMyList(unittest.TestCase):
+    def test_print_sorted(self):
+        # Create a MyList instance
+        my_list = MyList([3, 1, 2, 5, 4])
+        
+        # Redirect stdout to capture print output
+        import sys
+        from io import StringIO
+        saved_stdout = sys.stdout
+        sys.stdout = StringIO()
+        
+        # Call the print_sorted method
+        my_list.print_sorted()
+        
+        # Get the printed output
+        printed_output = sys.stdout.getvalue()
+        
+        # Reset redirect
+        sys.stdout = saved_stdout
+        
+        # Check if the output is sorted
+        self.assertEqual(printed_output, "[1, 2, 3, 4, 5]\n")
+
+if __name__ == '__main__':
+    unittest.main()
+ 
