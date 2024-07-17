@@ -7,5 +7,5 @@ if (parseInt(argv[2])) {
         console.log('C is fun');
     }
   } else {
-    console.log('Not a number');
+    console.log('Missing number of occurrences');
   }
