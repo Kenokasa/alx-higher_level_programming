@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 const { argv } = require('process:node');
 
 if (argv.length > 2) {
