@@ -2,4 +2,4 @@
 
 const { argv } = require('node:process');
 
-console.log(argv.slice(2).join('is'));
+console.log(argv[2] + ' is ' + argv[3]);
