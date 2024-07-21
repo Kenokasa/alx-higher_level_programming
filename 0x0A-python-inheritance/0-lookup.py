@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""function that returns the list of availab
-le attributes and methods of an object"""
+"""Defines an object attribute lookup function."""
 
 
 def lookup(obj):
-    """ function to return the list """
-    return(dir(obj))
+    """Return a list of an object's available attributes."""
+    return (dir(obj))
