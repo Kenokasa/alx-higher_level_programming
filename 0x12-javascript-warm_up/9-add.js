@@ -2,8 +2,8 @@
 
 const { argv } = require('node:process');
 
-if (parseInt(argv[2]) && parseInt(argv[3])) {
-  console.log(parseInt(argv[2]) + parseInt(argv[3]));
-} else {
-  console.log('NaN');
+function add(a, b) {
+    return a + b;
 }
+
+console.log(add(parseInt(argv[2]), parseInt(argv[3])));
