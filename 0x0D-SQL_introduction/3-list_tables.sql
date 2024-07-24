@@ -1,4 +1,4 @@
 -- list all the table in a database
 -- list all the table in a database
 
-SELECT * FROM information_schema.tables
+SHOW TABLES FROM hbtn_0c_0
