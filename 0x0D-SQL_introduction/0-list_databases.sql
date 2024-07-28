@@ -1,4 +1,2 @@
--- show all databases
--- 0x0D-
+-- list all databases of the MySQL server
 SHOW DATABASES;
-
